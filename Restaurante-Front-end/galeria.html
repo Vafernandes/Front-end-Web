@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pratos - Aperrei culinário</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/iconPage02.png" type="image/x-icon">
+
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.easy_slides.css"/>
+        <script src="js/jquery.easy_slides.js"></script>
+       
+        <!-- Parallax -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+        <script src="js/parallax.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style7.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+
+    </head>
+    <body>
+        
+        <div class="container">        
+        
+            <div id="nav-bar">
+                <div class="toggle">
+                    <a><img id="menuIcon" src="img/MenuIcon.png" width="70" height="70"></a>
+                </div>
+
+                <div id="link">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="galeria.html">Pratos</a>
+                    <a href="contato.html">Contato</a>
+                    <a id="reservarMesa">Reservar</a>
+                </div>
+            </div>
+
+            <section id="mostruario" class="parallax-window" data-parallax="scroll" data-image-src="img/galeria.jpg">
+                <div id="title">
+                    <h1>Pratos</h1>
+                    <!-- <h2>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h2> -->
+                </div>
+
+                <!-- <button><a>Reservar mesa</a></button> -->
+
+                <div id="reserva">
+                    <h1>Reserva</h1>
+                    
+                    <form>
+                        
+                        <input type="text" name="nome" placeholder="Nome" class="input" class="inputDadosCli">
+                        
+                        <select class="input">
+                            <option>Nº acompanhantes</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <input type="date" name="data" class="input">
+                        <input type="text" name="hora"  id="hora" class="input" placeholder="Hora">
+                        
+                        <div id="btn-form">
+                            <button>Reservar</button>
+                            <button type="reset"> limpar </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+           <section id="galeriaFotos">
+
+                <h1>Galeria de pratos</h1>
+
+                <div class="campoGaleria">
+                    <img src="img/prato01.jpg" class="galeriaImg">
+                    <img src="img/prato02.jpg" class="galeriaImg">
+                    <img src="img/prato03.jpg" class="galeriaImg">
+                    <img src="img/prato04.jpg" class="galeriaImg">
+                    <img src="img/prato05.jpg" class="galeriaImg">
+                </div>
+
+                <div class="campoGaleria" id="campoGaleria02">
+                    <img src="img/prato06.jpg" class="galeriaImg">
+                    <img src="img/prato07.jpg" class="galeriaImg">
+                    <img src="img/prato08.jpg" class="galeriaImg">
+                    <img src="img/prato09.jpg" class="galeriaImg">
+                    <img src="img/prato10.jpg" class="galeriaImg">
+                </div>
+
+                
+                <button id="toggleGaleria">Mais pratos</button>
+                
+                <div id="maisPratos" >
+
+                    <a id="fecharMaisPratos"><p>X</p></a>
+
+                    <div id="containerMaisPratos">
+                        <ul class="ch-grid" >
+                            <li>
+                                <div class="ch-item">				
+                                    <div class="ch-info">
+                                        <div class="ch-info-front"> <img src="img/prato05.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                            <h3>Nome prato</h3>
+                                            <p>R$250</p>
+                                        </div>	
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ch-item">
+                                    <div class="ch-info">
+                                            <div class="ch-info-front"> <img src="img/prato01.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                                <h3>Nome prato</h3>
+                                                <p>R$250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ch-item">
+                                    <div class="ch-info">
+                                            <div class="ch-info-front"> <img src="img/prato02.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                                <h3>Nome prato</h3>
+                                                <p>R$250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                    <div class="ch-item">
+                                        <div class="ch-info">
+                                                <div class="ch-info-front"> <img src="img/prato06.jpg" width="250" height="240"> </div>
+                                            <div class="ch-info-back">
+                                                    <h3>Nome prato</h3>
+                                                    <p>R$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ch-item">
+                                        <div class="ch-info">
+                                                <div class="ch-info-front"> <img src="img/prato07.jpg" width="250" height="240"> </div>
+                                            <div class="ch-info-back">
+                                                    <h3>Nome prato</h3>
+                                                    <p>R$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+
+                        <ul class="ch-grid" >
+                            <li>
+                                <div class="ch-item">				
+                                    <div class="ch-info">
+                                        <div class="ch-info-front"> <img src="img/prato05.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                            <h3>Nome prato</h3>
+                                            <p>R$250</p>
+                                        </div>	
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ch-item">
+                                    <div class="ch-info">
+                                            <div class="ch-info-front"> <img src="img/prato01.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                                <h3>Nome prato</h3>
+                                                <p>R$250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ch-item">
+                                    <div class="ch-info">
+                                            <div class="ch-info-front"> <img src="img/prato02.jpg" width="250" height="240"> </div>
+                                        <div class="ch-info-back">
+                                                <h3>Nome prato</h3>
+                                                <p>R$250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                    <div class="ch-item">
+                                        <div class="ch-info">
+                                                <div class="ch-info-front"> <img src="img/prato06.jpg" width="250" height="240"> </div>
+                                            <div class="ch-info-back">
+                                                    <h3>Nome prato</h3>
+                                                    <p>R$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ch-item">
+                                        <div class="ch-info">
+                                                <div class="ch-info-front"> <img src="img/prato07.jpg" width="250" height="240"> </div>
+                                            <div class="ch-info-back">
+                                                    <h3>Nome prato</h3>
+                                                    <p>R$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- <div class="slider_four_in_line">
+                            <div> 
+                                <div class="descImgBloco">
+                                    <img src="img/section3.jpg" class="imgbloco"/>
+                                    <p>Nulla quis vulputate R$50,00</p>
+                                </div>
+                            </div>
+                            <div> 
+                                <div class="descImgBloco">
+                                    <img src="img/imgPratoHome1.png" class="imgbloco">
+                                        <p>Nulla quis vulputate R$50,00</p>    
+                                </div>
+                            </div>
+                            <div>
+                                    <div class="descImgBloco">
+                                            <img src="img/imgPratoHome2.jpg" class="imgbloco">
+                                            <p>Nulla quis vulputate R$50,00</p>    
+                                        </div>
+                            </div>
+                            <div>
+                                    <div class="descImgBloco">
+                                            <img src="img/imgPratoHome2.jpg" class="imgbloco">
+                                            <p>Nulla quis vulputate R$50,00</p>    
+                                        </div>
+                            </div>
+                            <div>
+                                    <div class="descImgBloco">
+                                            <img src="img/imgPratoHome4.jpg" class="imgbloco">
+                                            <p>Nulla quis vulputate R$50,00</p>                        
+                                        </div>
+                            </div>
+                            <div class="next_button"></div>
+                            <div class="prev_button"></div>
+                        </div> -->
+                    
+
+                </div>
+
+           </section>
+
+           <section id="rodape">
+
+                <div id="campoRedeSociais">
+                    <div id="dadosDesenvolvedor">
+                        <p>Desenvolvedor: Vinicius Alves Fernandes</p>
+                    </div>
+                    <div id="redeSociaisFooter">
+                        <img src="img/redesSociais.png" />
+                    </div>
+                </div>
+
+                <div id="campoDadosFooter">
+                    <div id="dadosFooter">
+                        <h1>Endereço</h1>
+                        <p>Rua: Joaqui Barbosa, Nº 122</p>
+                        <p>Quixadá - CE</p>
+                    </div>
+                    <div id="telefone">
+                        <h1>Telefone</h1>
+                        <p>Telefone: (85) 94563-5888</p> 
+                        <p>aperreiculinario@gmail.com</p> 
+                    </div>
+                    <div id="sobreFooter">
+                        <h1>Sobre a empresa</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum aliquam eros quis tristique auctor. Etiam a orci mollis, 
+                            imperdiet eros a, sodales diam. 
+                            
+                            <p>Criada em: 14/04/2019</p>
+                        </p>
+                    </div>
+                </div>
+
+        </section>
+
+        </div>
+
+
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
